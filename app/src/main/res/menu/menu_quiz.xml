@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/hint"
+        android:icon="@drawable/hint_white"
+        android:title="ヒント"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/answer"
+        android:title="解答"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/top"
+        android:title="Top"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"/>
+
+</menu>

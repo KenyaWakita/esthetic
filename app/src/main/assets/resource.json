@@ -1,0 +1,81 @@
+{
+  "category":[
+    {
+      "name":"リラックス",
+      "property":[
+        {
+          "question":"問題文",
+          "answer":"解答もしくは正解するためのキーワード",
+          "index":1
+        },
+        {
+          "question":"問題文",
+          "answer":"解答もしくは正解するためのキーワード",
+          "index":2
+        }
+      ]
+    },
+    {
+      "name": "数字",
+      "property": [
+        {
+          "question": "sujiQ1.png",
+          "answer": "sujiA1.png",
+          "hint":"sujiH1.png",
+          "index": 1
+        },
+        {
+          "question": "sujiQ2.png",
+          "answer": "sujiA2.png",
+          "hint":"sujiH2.png",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "name": "人間観察力",
+      "property": [
+        {
+          "question": "問題文",
+          "answer": "解答もしくは正解するためのキーワード",
+          "index": 1
+        },
+        {
+          "question": "問題文",
+          "answer": "解答もしくは正解するためのキーワード",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "name": "ひらめき",
+      "property": [
+        {
+          "question":"hirameki_mondai1.png",
+          "answer": "A1.png",
+          "index": 1
+        },
+        {
+          "question": "問題文",
+          "answer": "解答もしくは正解するためのキーワード",
+          "index": 2
+        }
+      ]
+    },
+    {
+      "name": "IQテスト",
+      "property": [
+        {
+          "question": "問題文",
+          "answer": "解答もしくは正解するためのキーワード",
+          "index": 1
+        },
+        {
+          "question": "問題文",
+          "answer": "解答もしくは正解するためのキーワード",
+          "index": 2
+        }
+      ]
+    }
+  ]
+}

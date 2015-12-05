@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">脳内サプリ</string>
+    <string name="catego_name"></string>
+    <string name="ningenryoku_name">人間観察力</string>
+    <string name="ningenq1">人間観察力　問1</string>
+    <string name="ningena1">人間観察力　問1解答</string>
+    <string name="hirameki_name">ひらめき</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

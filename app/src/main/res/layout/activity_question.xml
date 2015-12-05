@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/q_activity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/question_imageView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/question"
+        android:layout_alignStart="@+id/answer"
+        android:layout_alignEnd="@+id/answer" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer"
+        android:hint="答えを入力してください"
+        android:paddingLeft="35.0dp" android:paddingTop="5.0dp"
+        android:paddingRight="35.0dp" android:paddingBottom="5.0dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="85dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送信"
+        android:id="@+id/send_button"
+        android:layout_alignBaseline="@+id/answer"
+        android:layout_toEndOf="@+id/answer"
+        />
+
+    <com.ad_stir.webview.AdstirMraidView
+        media="MEDIA-8f52fd45"
+        spot="1"
+        adsize="350,50"
+        refresh_interval="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

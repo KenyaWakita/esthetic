@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="おいしい栄養満点のドリンクとまずくて体に悪いドリンクを販売している店があります．この店の店員は，顔がそっくりの双子のみです．一方の店員はおいしい栄養満点のドリンクをすすめる正直者で，お客さんの注文通りのドリンクを提供します．
+        もう一方の店員はまずくて体に悪いドリンクをすすめるひねくれ者で，お客さんの注文とは反対のドリンクを提供します．今日は，一人がお休みのため店員がどちらかわかりません． "
+        android:id="@+id/textView7"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="おいしい栄養満点のドリンクを飲むためにこの店員にひと言で注文してください．"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送信"
+        android:id="@+id/send2_button"
+        android:layout_below="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"/>
+
+</RelativeLayout>

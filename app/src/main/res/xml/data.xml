@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <category name="relax">
+        <No name="1">
+            <question>問題1の問題文</question>
+            <answer>問題1の解答</answer>
+            <description>問題1の解説</description>
+        </No>
+        <No name="2">
+            <question>問題2の問題文</question>
+            <answer>問題2の解答</answer>
+            <description>問題2の解説</description>
+        </No>
+        <No name="3">
+            <question>問題3の問題文</question>
+            <answer>問題3の解答</answer>
+            <description>問題3の解説</description>
+        </No>
+    </category>
+    <category name="suji">
+        <No name="1">
+            <question>問題1の問題文</question>
+            <answer>問題1の解答</answer>
+            <description>問題1の解説</description>
+        </No>
+        <No name="2">
+            <question>問題2の問題文</question>
+            <answer>問題2の解答</answer>
+            <description>問題2の解説</description>
+        </No>
+        <No name="3">
+            <question>問題3の問題文</question>
+            <answer>問題3の解答</answer>
+            <description>問題3の解説</description>
+        </No>
+    </category>
+    <category name="ningen">
+        <No name="1">
+            <question>問題1の問題文</question>
+            <answer>問題1の解答</answer>
+            <description>問題1の解説</description>
+        </No>
+        <No name="2">
+            <question>問題2の問題文</question>
+            <answer>問題2の解答</answer>
+            <description>問題2の解説</description>
+        </No>
+        <No name="3">
+            <question>問題3の問題文</question>
+            <answer>問題3の解答</answer>
+            <description>問題3の解説</description>
+        </No>
+    </category>
+    <category name="hirameki">
+        <No name="1">
+            <question>ある法則で書かれた式があります</question>
+            <answer>問題1の解答</answer>
+            <description>問題1の解説</description>
+        </No>
+        <No name="2">
+            <question>問題2の問題文</question>
+            <answer>問題2の解答</answer>
+            <description>問題2の解説</description>
+        </No>
+        <No name="3">
+            <question>問題3の問題文</question>
+            <answer>問題3の解答</answer>
+            <description>問題3の解説</description>
+        </No>
+    </category>
+    <category name="iq">
+        <No name="1">
+            <question>問題1の問題文</question>
+            <answer>問題1の解答</answer>
+            <description>問題1の解説</description>
+        </No>
+        <No name="2">
+            <question>問題2の問題文</question>
+            <answer>問題2の解答</answer>
+            <description>問題2の解説</description>
+        </No>
+        <No name="3">
+            <question>問題3の問題文</question>
+            <answer>問題3の解答</answer>
+            <description>問題3の解説</description>
+        </No>
+    </category>
+</PreferenceScreen>

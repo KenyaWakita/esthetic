@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/no_activity"
+    >
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/No_Table"
+        >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/table1"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/No1_button"
+            android:text="問1"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/sun"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/No2_button"
+            android:text="問2"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/sun"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/No3_button"
+            android:text="問3"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/sun"
+            android:textSize="25dp"
+            android:textColor="@color/black" />
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:id="@+id/table2"
+            android:layout_marginTop="30dp"
+            >
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/No4_button"
+                android:text="問1"
+                android:layout_marginLeft="27dp"
+                android:background="@drawable/button_defalt"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/No5_button"
+                android:text="問2"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_defalt"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/No6_button"
+                android:text="問3"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/button_defalt"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="次へ"
+        android:id="@+id/next_button"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <com.ad_stir.webview.AdstirMraidView
+        media="MEDIA-8f52fd45"
+        spot="1"
+        adsize="350,50"
+        refresh_interval="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+</RelativeLayout>
