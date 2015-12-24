@@ -5,55 +5,46 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name=".MeasurementGAManager"
+        >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Categoryselect_Activity"
-            android:label="@string/app_name"
-            >
-
+            android:label="@string/app_name" >
         </activity>
-
         <activity
             android:name=".Select_QuestionNo_Activity"
             android:label="@string/ningenryoku_name" >
         </activity>
-
         <activity
             android:name=".Question_Activity"
+            android:windowSoftInputMode="stateAlwaysHidden"
             android:label="@string/catego_name" >
         </activity>
-
         <activity
             android:name=".Answer_Activity"
             android:label="@string/catego_name" >
         </activity>
 
-        <activity
-            android:name=".NingenQ1"
-            android:label="@string/ningenq1" >
-        </activity>
-
-        <activity
-            android:name=".NingenA1"
-            android:label="@string/ningena1" >
-        </activity>
-
-
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
+
 
 </manifest>

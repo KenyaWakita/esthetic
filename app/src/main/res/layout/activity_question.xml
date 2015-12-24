@@ -3,14 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/q_activity">
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/question_imageView" />
-
+    android:id="@+id/q_activity"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -19,7 +13,9 @@
         android:text=""
         android:id="@+id/question"
         android:layout_alignStart="@+id/answer"
-        android:layout_alignEnd="@+id/answer" />
+        android:layout_alignEnd="@+id/answer"
+        android:focusable="true"
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -33,7 +29,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginBottom="85dp"
         android:textColorHint="@color/black"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        />
 
     <Button
         android:layout_width="wrap_content"

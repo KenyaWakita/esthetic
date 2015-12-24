@@ -1,37 +1,43 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context=".MainActivity">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/home_imageView"
-        android:scaleType="fitXY"/>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/top"
+        android:scaleType="fitXY"
+         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="スタート"
         android:id="@+id/start"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"
-        android:onClick="Start"/>
+        android:onClick="Start"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/usage"
+        android:layout_toStartOf="@+id/usage" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="使い方"
         android:id="@+id/usage"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="115dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"/>
+        android:layout_alignParentEnd="true" />
 
     <com.ad_stir.webview.AdstirMraidView
         media="MEDIA-8f52fd45"
@@ -41,6 +47,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        />
+        android:id="@+id/view" />
 
 </RelativeLayout>

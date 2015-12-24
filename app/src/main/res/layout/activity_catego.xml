@@ -30,7 +30,7 @@
         app:showOutline="false"
         app:roundedCorners="true"
         android:id="@+id/relax_button"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true" />
 

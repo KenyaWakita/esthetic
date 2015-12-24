@@ -3,6 +3,8 @@ package kenyawakita.sapuri;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.beardedhen.androidbootstrap.BootstrapButton;
@@ -70,5 +72,36 @@ public class Categoryselect_Activity extends Activity{
                 startActivityForResult(intent, 0);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //トップボタンを押した時の動作
+        if (id==R.id.top){
+            Intent intent = new Intent(activity, MainActivity.class);
+            startActivityForResult(intent, 0);
+            this.finish();
+        }
+
+        //トップボタンを押した時の動作
+        if (id==R.id.back){
+            Intent intent = new Intent(activity, MainActivity.class);
+            startActivityForResult(intent, 0);
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -2,18 +2,29 @@ package kenyawakita.sapuri;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Display;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 
 public class Select_QuestionNo_Activity extends Activity implements View.OnClickListener {
 
     Activity activity;
-    int checkid=0;
+    int focused_button_id =-1;
     String category_name;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -21,17 +32,17 @@ public class Select_QuestionNo_Activity extends Activity implements View.OnClick
         setContentView(R.layout.activity_select_question_no);
         activity = this;
 
-        Button No1_button = (Button) findViewById(R.id.No1_button);
-        Button No2_button = (Button) findViewById(R.id.No2_button);
-        Button No3_button = (Button) findViewById(R.id.No3_button);
-        final Button next_button = (Button) findViewById(R.id.next_button);
-        View layout = findViewById(R.id.no_activity);
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.No_Table);
+
+        View layout = findViewById(R.id.question_No_activity);
+        int category_size = 0;
+
 
         //インテントでカテゴリー名の受け取り
-        Intent i=getIntent();
+        Intent i = getIntent();
         category_name = i.getStringExtra("category_name");
         setTitle(category_name);
-        switch(category_name) {
+        switch (category_name) {
             case "リラックス":
                 layout.setBackgroundResource(R.color.bootstrap_brand_success);
                 break;
@@ -51,49 +62,102 @@ public class Select_QuestionNo_Activity extends Activity implements View.OnClick
                 break;
         }
 
-        TableLayout No_Table = (TableLayout) findViewById(R.id.No_Table);
+        Log.d("catesele",category_name);
 
-        //各ボタンをリスナーに登録．OnClickした時に反応できるようにするため
-        No1_button.setOnClickListener((View.OnClickListener) this);
-        No2_button.setOnClickListener((View.OnClickListener) this);
-        No3_button.setOnClickListener((View.OnClickListener) this);
-
-
-
-
+        //選択されているカテゴリーの問題数を計算
+        for(int k = 0; k < MainActivity.resource.size(); k++){
+            if(MainActivity.resource.get(k).getCategory().equals(category_name)){
+                category_size++;
+            }
+        }
 
 
+        TableRow row;
+        TableRow.LayoutParams row_layout_params
+                = new TableRow.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT); // -2はLayoutParams.WRAP_CONTENT
 
+        // Layout用
+        LinearLayout[] array_layout_view = new LinearLayout[100];
 
+        // button用
+        Button[] array_button_view = new Button[100];
 
-        //次へボタンを押した時
-//        next_button.setOnClickListener(new View.OnClickListener() {
-//            RadioGroup Radio = (RadioGroup) findViewById(R.id.radioGroup);
-//
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(activity, Question_Activity.class);
-//                intent.putExtra("category_name", category_name);
-//
-//                switch (Radio.getCheckedRadioButtonId()) {
-//                    //問1を選択した時
-//                    case R.id.radioButton1:
-//                        intent.putExtra("No", "1");
-//                        break;
-//                    //問2を選択した時
-//                    case R.id.radioButton2:
-//                        intent.putExtra("No", "2");
-//                        break;
-//                    //問3を選択した時
-//                    case R.id.radioButton3:
-//                        intent.putExtra("No", "3");
-//                        break;
-//                    default:
-//                        break;
-//                }
-//                startActivityForResult(intent, 0);
-//            }
-//        });
+        Display display = getWindowManager().getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int width = size.x;
+        int height = size.y;
+        int y;
+
+        for(y = 0; y < (category_size/3); ++y){
+            Log.d("log", String.valueOf(y));
+            // 行ごとにRowの初期化
+            row = new TableRow(this);
+            row.setLayoutParams(row_layout_params);
+
+            for(int x = 0; x < 3; ++x){ // 列
+                int index = x + y * 3;
+                array_layout_view[index] = new LinearLayout(this);
+                array_button_view[index] = new Button(this);
+
+                array_button_view[index].setId(index);
+                array_button_view[index].setText("問" + Integer.toString(index + 1)); // 何番目のTextViewかでも表示
+                array_button_view[index].setTextSize(22);
+                array_button_view[index].setTextColor(getResources().getColor(R.color.black));
+                array_button_view[index].setWidth(width / 4);
+                array_button_view[index].setHeight(width / 4);
+
+                //問題番号によって，画像をかえるなら，ここで一つ一つロードする必要あり
+                array_button_view[index].setBackgroundResource(R.drawable.q1_64);
+
+                array_layout_view[index].addView(array_button_view[index]);
+                array_layout_view[index].setPadding(50,20,30,70);
+                array_button_view[index].setOnClickListener(this);
+
+                // rowに入れていく
+                row.addView(array_layout_view[index]);
+            }
+            // 1行入れて次のループへ
+            tableLayout.addView(row);
+        }
+
+        //最後の1行は，問題によって列の数が違うので，ここで作る
+        int row_size;
+        //選択されたカテゴリーの問題数が3の倍数だったら，3を代入
+        if(category_size%3 == 0){
+            row_size = 3;
+        }
+        //そうでなければ，3で割った余りを代入
+        else{
+            row_size = category_size%3;
+        }
+
+        row = new TableRow(this);
+        row.setLayoutParams(row_layout_params);
+        for (int x = 0; x < row_size; ++x){
+            int index = x + y * 3;
+            array_layout_view[index] = new LinearLayout(this);
+            array_button_view[index] = new Button(this);
+
+            array_button_view[index].setId(index);
+            array_button_view[index].setText("問" + Integer.toString(index + 1)); // 何番目のTextViewかでも表示
+            array_button_view[index].setTextSize(22);
+            array_button_view[index].setTextColor(getResources().getColor(R.color.black));
+            array_button_view[index].setWidth(width / 4);
+            array_button_view[index].setHeight(width / 4);
+
+            //問題番号によって，画像をかえるなら，ここで一つ一つロードする必要あり
+            array_button_view[index].setBackgroundResource(R.drawable.q1_64);
+
+            array_layout_view[index].addView(array_button_view[index]);
+            array_layout_view[index].setPadding(50,20,30,70);
+            array_button_view[index].setOnClickListener(this);
+
+            // rowに入れていく
+            row.addView(array_layout_view[index]);
+
+        }
+        tableLayout.addView(row);
 
 
     }
@@ -101,37 +165,62 @@ public class Select_QuestionNo_Activity extends Activity implements View.OnClick
     @Override
     public void onClick(View v) {
 
-        if(v.getId() != checkid){
+        //v.getId()とは，今，クリックされたボタンのId
+        if(v.getId() != focused_button_id){
             //もしボタンクリックが初めてではなかったら，ボタンの色を黒に戻す
-            if(checkid != 0) {
-                Button precheked_button = (Button) findViewById(checkid);
-                precheked_button.setBackgroundResource(R.drawable.button_defalt);
+            if(focused_button_id != -1) {
+                Button pre_focused_button = (Button) findViewById(focused_button_id);
+                pre_focused_button.setBackgroundResource(R.drawable.suji_no_icon);
             }
-            checkid=v.getId();
+            focused_button_id =v.getId();
 
-
-            Button cheked_button = (Button) findViewById(checkid);
-            cheked_button.setBackgroundResource(R.color.blue);
+            Button focused_button = (Button) findViewById(focused_button_id);
+            focused_button.setBackgroundResource(R.drawable.focused_button_design);
         }
 
+        //二連続で同じボタンをクリックした時
         else {
             //初期化
-            checkid=0;
+            focused_button_id =-1;
             Intent intent = new Intent(activity, Question_Activity.class);
             intent.putExtra("category_name", category_name);
-            switch (v.getId()){
-                case R.id.No1_button:
-                    intent.putExtra("No", "1");
-                    break;
-                case R.id.No2_button:
-                    intent.putExtra("No","2");
-                    break;
-                case R.id.No3_button:
-                    intent.putExtra("No","3");
-                    break;
-            }
+            intent.putExtra("No",String.valueOf(v.getId() + 1));
+
+            startActivityForResult(intent, 0);
+            focused_button_id =v.getId();
+
+        }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //トップボタンを押した時の動作
+        if (id==R.id.top){
+            Intent intent = new Intent(activity, MainActivity.class);
             startActivityForResult(intent, 0);
         }
 
+        //戻るボタンを押した時の動作
+        if (id==R.id.back){
+            Intent intent = new Intent(activity, Categoryselect_Activity.class);
+            startActivityForResult(intent, 0);
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
+
 }
