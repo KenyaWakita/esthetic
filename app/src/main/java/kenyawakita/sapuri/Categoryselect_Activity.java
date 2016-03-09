@@ -22,7 +22,7 @@ public class Categoryselect_Activity extends Activity{
         final BootstrapButton suji_button = (BootstrapButton) findViewById(R.id.suji_button);
         final BootstrapButton ningen_button = (BootstrapButton) findViewById(R.id.ningen_button);
         final BootstrapButton hirameki_button = (BootstrapButton) findViewById(R.id.hirameki_button);
-        final BootstrapButton IQ_button = (BootstrapButton) findViewById(R.id.IQ_button);
+
 
         //リラックスボタンを押した時
         relax_button.setOnClickListener(new View.OnClickListener() {
@@ -59,16 +59,6 @@ public class Categoryselect_Activity extends Activity{
             public void onClick(View v) {
                 Intent intent = new Intent(activity, Select_QuestionNo_Activity.class);
                 intent.putExtra("category_name",hirameki_button.getText());
-                startActivityForResult(intent, 0);
-            }
-        });
-
-        //IQテストボタンを押した時
-        IQ_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(activity, Select_QuestionNo_Activity.class);
-                intent.putExtra("category_name",IQ_button.getText());
                 startActivityForResult(intent, 0);
             }
         });

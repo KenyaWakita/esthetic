@@ -2,6 +2,7 @@ package kenyawakita.sapuri;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -9,8 +10,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
@@ -30,18 +35,22 @@ public class MainActivity extends Activity {
 
     Activity activity;
     static ArrayList<FetchResource> resource = new ArrayList<>();
+    private SharedPreferences Store;
+    private final int WRAP_CONTENT = ViewGroup.LayoutParams.WRAP_CONTENT;
+    private final int MATCH_PARENT = ViewGroup.LayoutParams.MATCH_PARENT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Store = getSharedPreferences("DataStore", MODE_PRIVATE);
 
         resource.clear();
 
         //mainのthis
         activity = this;
-        final Button start_button = (Button) findViewById(R.id.start);
+        final ImageButton start_button = (ImageButton) findViewById(R.id.start);
         ImageView top_imageView = (ImageView) findViewById(R.id.home_imageView);
 
         InputStream home_image = null;
@@ -87,13 +96,23 @@ public class MainActivity extends Activity {
                 for(int j=0; j < property.length(); j++){
 
                     resource.add(new FetchResource(
-                            roo.getString("name"),
-                            property.getJSONObject(j).getString("question"),
-                            property.getJSONObject(j).getString("answer"),
-                            property.getJSONObject(j).getString("hint"),
-                            property.getJSONObject(j).getString("index")
+                                    roo.getString("name"),
+                                    property.getJSONObject(j).getString("question_No"),
+                                    property.getJSONObject(j).getString("question_No_solved"),
+                                    property.getJSONObject(j).getString("question"),
+                                    property.getJSONObject(j).getString("answer"),
+                                    property.getJSONObject(j).getString("description"),
+                                    property.getJSONObject(j).getString("hint"),
+                                    property.getJSONObject(j).getString("index")
+
                             )
                     );
+
+                    //リセット
+                    SharedPreferences.Editor editor = Store.edit();
+                    editor.putBoolean(property.getJSONObject(j).getString("question"),false);
+                    editor.commit();
+
                 }
             }
         } catch (JSONException e) {
@@ -109,7 +128,11 @@ public class MainActivity extends Activity {
                 startActivityForResult(intent, 0);
             }
         });
+
+
     }
+
+
 
     @Override
     protected void onStart(){

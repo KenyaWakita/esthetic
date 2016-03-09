@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="リラックス"
-        app:bootstrapBrand="success"
+        app:bootstrapBrand="danger"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
         app:showOutline="false"
@@ -33,6 +33,7 @@
         android:layout_marginTop="30dp"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true" />
+
 
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:layout_width="wrap_content"
@@ -51,8 +52,8 @@
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="人間観察力"
-        app:bootstrapBrand="primary"
+        android:text="文章"
+        app:bootstrapBrand="success"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
         app:showOutline="false"
@@ -66,8 +67,8 @@
     <com.beardedhen.androidbootstrap.BootstrapButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ひらめき"
-        app:bootstrapBrand="warning"
+        android:text="図形"
+        android:background="@color/purpl"
         app:bootstrapSize="lg"
         app:buttonMode="regular"
         app:showOutline="false"
@@ -77,19 +78,19 @@
         android:layout_below="@+id/ningen_button"
         android:layout_centerHorizontal="true" />
 
-    <com.beardedhen.androidbootstrap.BootstrapButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="IQテスト"
-        app:bootstrapBrand="danger"
-        app:bootstrapSize="lg"
-        app:buttonMode="regular"
-        app:showOutline="false"
-        app:roundedCorners="true"
-        android:id="@+id/IQ_button"
-        android:layout_below="@+id/hirameki_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+    <!--<com.beardedhen.androidbootstrap.BootstrapButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="IQテスト"-->
+        <!--app:bootstrapBrand="danger"-->
+        <!--app:bootstrapSize="lg"-->
+        <!--app:buttonMode="regular"-->
+        <!--app:showOutline="false"-->
+        <!--app:roundedCorners="true"-->
+        <!--android:id="@+id/IQ_button"-->
+        <!--android:layout_below="@+id/hirameki_button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="42dp" />-->
 
     <com.ad_stir.webview.AdstirMraidView
         media="MEDIA-8f52fd45"

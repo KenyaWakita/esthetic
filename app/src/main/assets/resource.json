@@ -4,16 +4,103 @@
       "name":"リラックス",
       "property":[
         {
-          "question":"問題文",
-          "answer":"解答もしくは正解するためのキーワード",
+          "question_No":"relax/unsolved_pink 1.png",
+          "question_No_solved":"relax/solved_pink 1.png",
+          "question":"relax/nazo_q1.png",
+          "answer":"a",
+          "description":"relax/nazo_a1.png",
           "hint":"sujiH1.png",
           "index":"問1"
         },
         {
-          "question":"問題文",
-          "answer":"解答もしくは正解するためのキーワード",
+          "question_No":"relax/unsolved_pink 2.png",
+          "question_No_solved":"relax/solved_pink 2.png",
+          "question":"relax/nazo_q2.png",
+          "answer":"a",
+          "description":"relax/nazo_a2.png像",
           "hint":"sujiH1.png",
           "index":"問2"
+        },
+        {
+          "question_No":"relax/unsolved_pink 3.png",
+          "question_No_solved":"relax/solved_pink 3.png",
+          "question":"relax/nazo_q3.png",
+          "answer":"a",
+          "description":"relax/nazo_a3.png",
+          "hint":"sujiH1.png",
+          "index":"問3"
+        },
+        {
+          "question_No":"relax/unsolved_pink 4.png",
+          "question_No_solved":"relax/solved_pink 4.png",
+          "question":"relax/nazo_q4.png",
+          "answer":"a",
+          "description":"relax/nazo_a4.png",
+          "hint":"sujiH1.png",
+          "index":"問4"
+        },
+        {
+          "question_No":"relax/unsolved_pink 5.png",
+          "question_No_solved":"relax/solved_pink 5.png",
+          "question":"relax/nazo_q5.png",
+          "answer":"a",
+          "description":"relax/nazo_a5.png",
+          "hint":"sujiH1.png",
+          "index":"問5"
+        },
+        {
+          "question_No":"relax/unsolved_pink 6.png",
+          "question_No_solved":"relax/solved_pink 6.png",
+          "question":"relax/nazo_q6.png",
+          "answer":"a",
+          "description":"relax/nazo_a6.png",
+          "hint":"sujiH1.png",
+          "index":"問6"
+        },
+        {
+          "question_No":"relax/unsolved_pink 7.png",
+          "question_No_solved":"relax/solved_pink 7.png",
+          "question":"relax/nazo_q7.png",
+          "answer":"a",
+          "description":"relax/nazo_a7.png",
+          "hint":"sujiH1.png",
+          "index":"問7"
+        },
+        {
+          "question_No":"relax/unsolved_pink 8.png",
+          "question_No_solved":"relax/solved_pink 8.png",
+          "question":"relax/nazo_q8.png",
+          "answer":"a",
+          "description":"relax/nazo_a8.png",
+          "hint":"sujiH1.png",
+          "index":"問8"
+        },
+        {
+          "question_No":"relax/unsolved_pink 9.png",
+          "question_No_solved":"relax/solved_pink 9.png",
+          "question":"relax/nazo_q9.png",
+          "answer":"a",
+          "description":"relax/nazo_a9.png",
+          "hint":"sujiH1.png",
+          "index":"問9"
+        },
+        {
+          "question_No":"relax/unsolved_pink 10.png",
+          "question_No_solved":"relax/solved_pink 10.png",
+          "question":"relax/nazo_q10.png",
+          "answer":"a",
+          "description":"relax/nazo_a10.png",
+          "hint":"sujiH1.png",
+          "index":"問10"
+        },
+        {
+          "question_No":"relax/unsolved_pink 11.png",
+          "question_No_solved":"relax/solved_pink 11.png",
+          "question":"relax/nazo_q11.png",
+          "answer":"a",
+          "description":"relax/nazo_a11.png",
+          "hint":"sujiH1.png",
+          "index":"問10"
         }
       ]
     },
@@ -21,84 +108,282 @@
       "name": "数字",
       "property": [
         {
-          "question": "sujiQ1.png",
-          "answer": "sujiA1.png",
-          "hint":"sujiH1.png",
+          "question_No":"suji/unsolved_blue_1.png",
+          "question_No_solved":"suji/solved_blue1.png",
+          "question": "suji/sujiQ1.png",
+          "answer": "B",
+          "description":"suji/number_a1.png",
+          "hint":"suji/sujiH1.png",
           "index": "問1"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_2.png",
+          "question_No_solved":"suji/solved_blue2.png",
+          "question": "suji/sujiQ2.png",
+          "answer": "B",
+          "description":"suji/number_a2.png",
+          "hint":"suji/sujiH2.png",
           "index": "問2"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_3.png",
+          "question_No_solved":"suji/solved_blue3.png",
+          "question": "suji/sujiQ3.png",
+          "answer": "B",
+          "description":"suji/number_a3.png",
+          "hint":"suji/sujiH2.png",
           "index": "問3"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_4.png",
+          "question_No_solved":"suji/solved_blue4.png",
+          "question": "suji/sujiQ4.png",
+          "answer": "A",
+          "description":"suji/number_a4.png",
+          "hint":"suji/sujiH2.png",
           "index": "問4"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_5.png",
+          "question_No_solved":"suji/solved_blue5.png",
+          "question": "suji/sujiQ5.png",
+          "answer": "A",
+          "description":"suji/number_a5.png",
+          "hint":"suji/sujiH2.png",
           "index": "問5"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_6.png",
+          "question_No_solved":"suji/solved_blue6.png",
+          "question": "suji/sujiQ6.png",
+          "answer": "A",
+          "description":"suji/number_a6.png",
+          "hint":"suji/sujiH2.png",
           "index": "問6"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_7.png",
+          "question_No_solved":"suji/solved_blue7.png",
+          "question": "suji/sujiQ7.png",
+          "answer": "A",
+          "description":"suji/number_a7.png",
+          "hint":"suji/sujiH2.png",
           "index": "問7"
         },
         {
-          "question": "sujiQ2.png",
-          "answer": "sujiA2.png",
-          "hint":"sujiH2.png",
+          "question_No":"suji/unsolved_blue_8.png",
+          "question_No_solved":"suji/solved_blue8.png",
+          "question": "suji/sujiQ8.png",
+          "answer": "C",
+          "description":"suji/number_a8.png",
+          "hint":"suji/sujiH2.png",
           "index": "問8"
         }
       ]
     },
     {
-      "name": "人間観察力",
+      "name": "文章",
       "property": [
         {
-          "question": "問題文",
-          "answer": "解答もしくは正解するためのキーワード",
+          "question_No":"bunsho/unsolved_green20.png",
+          "question_No_solved":"bunsho/solved_green1.png",
+          "question": "bunsho/bunsho_q1.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a1.png",
           "hint":"sujiH1.png",
           "index": "問1"
         },
         {
-          "question": "問題文",
-          "answer": "解答もしくは正解するためのキーワード",
+          "question_No":"bunsho/unsolved_green19.png",
+          "question_No_solved":"bunsho/solved_green2.png",
+          "question": "bunsho/bunsho_q2.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a2.png",
           "hint":"sujiH1.png",
           "index": "問2"
+        },
+        {
+          "question_No":"bunsho/unsolved_green18.png",
+          "question_No_solved":"bunsho/solved_green3.png",
+          "question": "bunsho/bunsho_q3.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a3.png",
+          "hint":"sujiH1.png",
+          "index": "問3"
+        },
+        {
+          "question_No":"bunsho/unsolved_green17.png",
+          "question_No_solved":"bunsho/solved_green4.png",
+          "question": "bunsho/bunsho_q4.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a4.png",
+          "hint":"sujiH1.png",
+          "index": "問4"
+        },
+        {
+          "question_No":"bunsho/unsolved_green16.png",
+          "question_No_solved":"bunsho/solved_green5.png",
+          "question": "bunsho/bunsho_q5.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a5.png",
+          "hint":"sujiH1.png",
+          "index": "問5"
+        },
+        {
+          "question_No":"bunsho/unsolved_green15.png",
+          "question_No_solved":"bunsho/solved_green6.png",
+          "question": "bunsho/bunsho_q6.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a6.png",
+          "hint":"sujiH1.png",
+          "index": "問6"
+        },
+        {
+          "question_No":"bunsho/unsolved_green14.png",
+          "question_No_solved":"bunsho/solved_green7.png",
+          "question": "bunsho/bunsho_q7.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a7.png",
+          "hint":"sujiH1.png",
+          "index": "問7"
+        },
+        {
+          "question_No":"bunsho/unsolved_green13.png",
+          "question_No_solved":"bunsho/solved_green8.png",
+          "question": "bunsho/bunsho_q8.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a8.png",
+          "hint":"sujiH1.png",
+          "index": "問8"
+        },
+        {
+          "question_No":"bunsho/unsolved_green12.png",
+          "question_No_solved":"bunsho/solved_green9.png",
+          "question": "bunsho/bunsho_q9.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a9.png",
+          "hint":"sujiH1.png",
+          "index": "問9"
+        },
+        {
+          "question_No":"bunsho/unsolved_green11.png",
+          "question_No_solved":"bunsho/solved_green10.png",
+          "question": "bunsho/bunsho_q10.png",
+          "answer": "a",
+          "description":"bunsho/bunsho_a10.png",
+          "hint":"sujiH1.png",
+          "index": "問10"
         }
       ]
     },
     {
-      "name": "ひらめき",
+      "name": "図形",
       "property": [
         {
-          "question":"hirameki_mondai1.png",
-          "answer": "A1.png",
+          "question_No":"zukei/unsolved_purple1.png",
+          "question_No_solved":"zukei/solved_purple1.png",
+          "question":"zukei/zukeiQ1.png",
+          "answer": "a",
+          "description":"zukei/zukei_a1.png",
           "hint":"sujiH1.png",
           "index": "問1"
         },
         {
-          "question": "問題文",
+          "question_No":"zukei/unsolved_purple2.png",
+          "question_No_solved":"zukei/solved_purple2.png",
+          "question": "zukei/zukeiQ2.png",
+          "answer": "a",
+          "description":"zukei/zukei_a2.png",
+          "hint":"sujiH1.png",
+          "index": "問2"
+        },
+        {
+          "question_No":"zukei/unsolved_purple3.png",
+          "question_No_solved":"zukei/solved_purple3.png",
+          "question":"zukei/zukeiQ3.png",
+          "answer": "a",
+          "description":"zukei/zukei_a3.png",
+          "hint":"sujiH1.png",
+          "index": "問1"
+        },
+        {
+          "question_No":"zukei/unsolved_purple4.png",
+          "question_No_solved":"zukei/solved_purple4.png",
+          "question": "zukei/zukeiQ4.png",
           "answer": "解答もしくは正解するためのキーワード",
+          "description":"zukei/zukei_a4.png",
+          "hint":"sujiH1.png",
+          "index": "問2"
+        },
+        {
+          "question_No":"zukei/unsolved_purple5.png",
+          "question_No_solved":"zukei/solved_purple5.png",
+          "question":"zukei/zukeiQ5.png",
+          "answer": "A1.png",
+          "description":"zukei/zukei_a5.png",
+          "hint":"sujiH1.png",
+          "index": "問1"
+        },
+        {
+          "question_No":"zukei/unsolved_purple6.png",
+          "question_No_solved":"zukei/solved_purple6.png",
+          "question": "zukei/zukeiQ6.png",
+          "answer": "解答もしくは正解するためのキーワード",
+          "description":"zukei/zukei_a6.png",
+          "hint":"sujiH1.png",
+          "index": "問2"
+        },
+        {
+          "question_No":"zukei/unsolved_purple7.png",
+          "question_No_solved":"zukei/solved_purple7.png",
+          "question":"zukei/zukeiQ7.png",
+          "answer": "A1.png",
+          "description":"zukei/zukei_a7.png",
+          "hint":"sujiH1.png",
+          "index": "問1"
+        },
+        {
+          "question_No":"zukei/unsolved_purple8.png",
+          "question_No_solved":"zukei/solved_purple8.png",
+          "question": "zukei/zukeiQ8.png",
+          "answer": "解答もしくは正解するためのキーワード",
+          "description":"zukei/zukei_a8.png",
+          "hint":"sujiH1.png",
+          "index": "問2"
+        },
+        {
+          "question_No":"zukei/unsolved_purple9.png",
+          "question_No_solved":"zukei/solved_purple9.png",
+          "question":"zukei/zukeiQ9.png",
+          "answer": "A1.png",
+          "description":"zukei/zukei_a9.png",
+          "hint":"sujiH1.png",
+          "index": "問1"
+        },
+        {
+          "question_No":"zukei/unsolved_purple10.png",
+          "question_No_solved":"zukei/solved_purple10.png",
+          "question": "zukei/zukeiQ10.png",
+          "answer": "解答もしくは正解するためのキーワード",
+          "description":"zukei/zukei_a10.png",
+          "hint":"sujiH1.png",
+          "index": "問2"
+        },
+        {
+          "question_No":"zukei/unsolved_purple11.png",
+          "question_No_solved":"zukei/solved_purple11.png",
+          "question":"zukei/zukeiQ11.png",
+          "answer": "A1.png",
+          "description":"zukei/zukei_a11.png",
+          "hint":"sujiH1.png",
+          "index": "問1"
+        },
+        {
+          "question_No":"zukei/unsolved_purple12.png",
+          "question_No_solved":"zukei/solved_purple12.png",
+          "question": "zukei/zukeiQ12.png",
+          "answer": "解答もしくは正解するためのキーワード",
+          "description":"zukei/zukei_a12.png",
           "hint":"sujiH1.png",
           "index": "問2"
         }
@@ -108,14 +393,20 @@
       "name": "IQテスト",
       "property": [
         {
+          "question_No":"zukei/unsolved_purple1.png",
+          "question_No_solved":"zukei/solved_purple12.png",
           "question": "問題文",
-          "answer": "解答もしくは正解するためのキーワード",
+          "answer": "a",
+          "description":"answer画面で表示する画像",
           "hint":"sujiH1.png",
           "index": "問1"
         },
         {
+          "question_No":"zukei/unsolved_purple1.png",
+          "question_No_solved":"zukei/solved_purple12.png",
           "question": "問題文",
-          "answer": "解答もしくは正解するためのキーワード",
+          "answer": "a",
+          "description":"answer画面で表示する画像",
           "hint":"sujiH1.png",
           "index": "問2"
         }

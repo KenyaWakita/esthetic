@@ -37,7 +37,7 @@
             android:label="@string/catego_name" >
         </activity>
         <activity
-            android:name=".Answer_Activity"
+            android:name=".Description_Activity"
             android:label="@string/catego_name" >
         </activity>
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/q_select_activity"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/qq1"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/button_view"
+        android:padding="0dp">
+
+
+        <!--<Button-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/b1"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/b2"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/b3"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:id="@+id/b4"-->
+            <!--/>-->
+
+
+    </LinearLayout>
+
+    <com.ad_stir.webview.AdstirMraidView
+        media="MEDIA-8f52fd45"
+        spot="1"
+        adsize="350,50"
+        refresh_interval="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</LinearLayout>
